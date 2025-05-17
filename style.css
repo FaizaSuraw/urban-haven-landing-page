@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Playwrite HU", cursive;
+  --color-primary: #7d0a0a;
+  --color-primary-light: #bf3131;
+  --color-white: #ffffff;
+  --color-white-light: #eeeeee;
+  --color-white-lighter: #f8f9fa;
+  --color-grey-dark: #ead196;
+  --color-black-main: #000000;
+  --color-black-light: #262626;
+}
+body {
+  font-size: 1.6rem;
+}

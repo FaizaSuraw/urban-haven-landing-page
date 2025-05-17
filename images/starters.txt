@@ -1,0 +1,8 @@
+primary color #7D0A0A;
+primary light color #BF3131;
+color white #ffffff;
+color white light #EEEEEE;
+color white lighter # #f8f9fa;
+color grey dark #EAD196;
+color black main #000000;
+color black light #262626;
