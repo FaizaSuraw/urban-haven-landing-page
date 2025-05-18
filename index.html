@@ -25,11 +25,11 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-contact">
         <div class="header-contact-item">
           <i class="fa-solid fa-phone"></i>
-          <p>+2547 269 373 17</p>
+          <p>+2547 187 643 27</p>
         </div>
         <div class="header-contact-item">
           <i class="fa-solid fa-location-dot"></i>
@@ -37,7 +37,7 @@
         </div>
         <div class="header-contact-item">
           <i class="fa-solid fa-envelope"></i>
-          <p>info@urbanhaven.co.ke</p>
+          <p>urhaven@apartments.com</p>
         </div>
       </div>
       <div class="header-navigation">
@@ -46,11 +46,15 @@
         </a>
         <nav class="header-nav">
           <ol class="header-nav-list">
-            <li class="header-nav-list-item"><a href="#">home</a></li>
-            <li class="header-nav-list-item"><a href="#">About</a></li>
-            <li class="header-nav-list-item"><a href="#">for rent</a></li>
-            <li class="header-nav-list-item"><a href="#">Amenities</a></li>
-            <li class="header-nav-list-item"><a href="#">Contact</a></li>
+            <li class="header-nav-list-item"><a href="#home">home</a></li>
+            <li class="header-nav-list-item"><a href="#about">About</a></li>
+            <li class="header-nav-list-item">
+              <a href="#for-rent">for rent</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#amenities">Amenities</a>
+            </li>
+            <li class="header-nav-list-item"><a href="#contact">Contact</a></li>
             <li><a href="#" class="header-cta-btn">Rent Now </a></li>
           </ol>
         </nav>
@@ -59,8 +63,11 @@
         </button>
       </div>
     </header>
+
+    <a href="#header" class="scroll-to-top"> &uarr; </a>
+
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <h2 class="hero-title">
         <span class="hero-title-sub">Urban Haven</span>
         <span class="hero-title-main">Find Your Perfect Home</span>
@@ -109,8 +116,29 @@
     </section>
     <!--End of hero section-->
 
+    <!--About section-->
+    <section class="about-section" id="about">
+      <div class="about-section-image-wrapper">
+        <img src="./images/apartment.avif" alt="About Us" />
+      </div>
+      <div class="about-section-content">
+        <h2 class="about-section-title">About Us</h2>
+        <p class="about-section-description">
+          Urban Haven is a premier housing provider dedicated to offering
+          comfortable and stylish living spaces. Our mission is to create a
+          welcoming community where residents can thrive and feel at home.
+        </p>
+        <p class="about-section-description">
+          We take pride in our commitment to quality, ensuring that each
+          property meets the highest standards of comfort and design. Our team
+          is passionate about helping you find the perfect home that suits your
+          lifestyle and needs.
+        </p>
+      </div>
+    </section>
+    <!--End of About section-->
     <!--House category section-->
-    <section class="House-category">
+    <section class="House-category" id="for-rent">
       <div class="House-category-item">
         <img src="./images/singleroom.1.jpg" alt="Single Room" />
         <h3 class="House-category-title">Single Room</h3>
@@ -174,8 +202,8 @@
       </div>
     </section>
     <!--End of House category section-->
-
-    <section class="amenities-section">
+    <!--Amenities section-->
+    <section class="amenities-section" id="amenities">
       <div class="title">
         <h2 class="title-text">Delightful Amenities</h2>
       </div>

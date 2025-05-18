@@ -17,6 +17,7 @@ html {
   --color-grey-dark: #797877;
   --color-black-main: #000000;
   --color-black-light: #262626;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1.6rem;
@@ -127,6 +128,26 @@ body {
   border-radius: 5px;
   font-weight: 600;
 }
+/* scroll-to-top stylings*/
+.scroll-to-top {
+  --scroll-to-to-length: 6rem;
+  width: var(--scroll-to-to-length);
+  height: var(--scroll-to-to-length);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  text-decoration: none;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  z-index: 10000000000;
+}
+/* end of scroll-to-top stylings*/
 
 /* Hero section stylings*/
 .hero-section {
@@ -214,6 +235,42 @@ body {
   text-align: center;
 }
 /* End of Hero section stylings*/
+
+/* About section stylings*/
+.about-section {
+  padding: 4rem 5rem;
+  background-color: var(--color-white-light);
+}
+@media screen and (max-width: 25em) {
+  .about-section {
+    padding: 1rem 2rem;
+  }
+}
+.about-section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  font-family: sans-serif;
+}
+.about-section-description {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-grey-dark);
+  line-height: 2;
+  margin-top: 0.5rem;
+}
+.about-section-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.about-section-image-wrapper img {
+  width: 150px;
+  border-radius: 50px;
+}
+
+/* End of About section stylings*/
 
 /* House category section stylings*/
 .House-category {
@@ -334,3 +391,9 @@ body {
 }
 
 /* End of Amenities section stylings*/
+/* contact section stylings*/
+
+/* End of contact section stylings*/
+/* Footer section stylings*/
+
+/* End of Footer section stylings*/
