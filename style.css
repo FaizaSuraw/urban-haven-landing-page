@@ -255,5 +255,77 @@ body {
 
 .amenities-section {
   padding: 10rem 5rem;
+  background-color: var(--color-grey-dark);
 }
+
+.amenities-cards-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.amenities-card-details {
+  display: flex;
+}
+
+.amenities-card {
+  --amenitiescard-length: 30rem;
+  width: var(--amenitiescard-length);
+  height: var(--amenitiescard-length);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.amenities-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.amenities-card:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.amenities-card-details {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.amenities-price {
+  --amenities-price-length: 12rem;
+  width: var(--amenities-price-length);
+  height: var(--amenities-price-length);
+  background-color: var(--color-primary);
+  font-size: 3rem;
+  font-weight: 700;
+  border-radius: 50%;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: all 0.4s ease;
+}
+
+.amenities-card :hover .amenities-price {
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+}
+
+.amenities-title {
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 /* End of Amenities section stylings*/
