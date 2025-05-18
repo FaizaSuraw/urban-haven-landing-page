@@ -255,15 +255,20 @@ body {
 
 .amenities-section {
   padding: 10rem 5rem;
-  background-color: var(--color-grey-dark);
+  background-color: var(--color-white-light);
 }
 
+@media screen and (max-width: 25em) {
+  .amenities-section {
+    padding: 10rem 2rem;
+  }
+}
 .amenities-cards-container {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
 }
 .amenities-card-details {
   display: flex;
