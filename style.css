@@ -22,6 +22,20 @@ body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
 }
+
+/*Reusable components stylings*/
+.title {
+}
+.title-text {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  font-family: var(--secondary-font);
+  letter-spacing: 8px;
+}
+
+/* End of Reusable components stylings*/
 .header-contact {
   display: flex;
   justify-content: space-between;
@@ -237,3 +251,9 @@ body {
 }
 
 /* End of House category section stylings*/
+/* Amenities section stylings*/
+
+.amenities-section {
+  padding: 10rem 5rem;
+}
+/* End of Amenities section stylings*/
