@@ -25,8 +25,6 @@ body {
 }
 
 /*Reusable components stylings*/
-.title {
-}
 .title-text {
   text-align: center;
   font-size: 4rem;
@@ -392,8 +390,145 @@ body {
 
 /* End of Amenities section stylings*/
 /* contact section stylings*/
+/* Section Styling */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #f9f9f9;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.contact-section-title {
+  font-size: 40px;
+  font-family: var(--secondary-font);
+  color: #1e1e1e;
+  margin-bottom: 20px;
+}
 
+.contact-section-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  padding: 15px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  border-color: #0077cc;
+}
+
+.contact-form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form-btn {
+  background-color: #0077cc;
+  color: #fff;
+  width: 300px;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-btn:hover {
+  background-color: #005fa3;
+}
 /* End of contact section stylings*/
 /* Footer section stylings*/
+/* Footer Base Styling */
+.footer {
+  background-color: #1f2937; /* Dark gray */
+  color: #f3f4f6; /* Light text */
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-logo .logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  letter-spacing: 2rem;
+  color: #facc15; /* Amber for highlight */
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: #f3f4f6;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #facc15; /* Hover color */
+}
+
+/* Bottom Info Section */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #d1d5db; /* Muted gray */
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-logo,
+  .footer-socials {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+  }
+}
 
 /* End of Footer section stylings*/
